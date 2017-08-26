@@ -24,7 +24,7 @@
 
 
 
-				$.post("test.php",{email:user_email},function(data){
+				$.get("test.php",{email:user_email},function(data){
 				$("#result").html(data);	
 				});
 			});

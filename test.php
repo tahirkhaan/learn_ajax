@@ -1,1 +1,7 @@
-gg
+<?php
+
+echo $_POST['email'];
+
+
+
+?>

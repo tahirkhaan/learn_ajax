@@ -16,12 +16,15 @@
 	</style>
 	<!--Add jquery -->
 	<script>
-		$().ready(function(){
-
-			var email= $("#email").val();
+		$(document).ready(function(){
 			
 			$("#sub").click(function(){
-				$.post("test.php",{email:user_email}function(data){
+
+				var user_email = $("#email").val();
+
+
+
+				$.post("test.php",{email:user_email},function(data){
 				$("#result").html(data);	
 				});
 			});
@@ -35,8 +38,11 @@
 <input type="text" name="email" id="email">	<br>
 <input type="submit" name="sub" id="sub" value="submit">
 
+<div id="result">
+	
 </div>
-<div id="result"></div>
+</div>
+
 
 
 

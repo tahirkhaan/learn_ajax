@@ -24,8 +24,6 @@
 				var user_email = $("#email").val();
 				var user_pass = $("#pass").val();
 
-
-
 				$.post("test.php",{name:user_name,email:user_email,pass:user_pass},function(data){
 				$("#result").html(data);	
 				});

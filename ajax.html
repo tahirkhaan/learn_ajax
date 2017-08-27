@@ -20,11 +20,13 @@
 			
 			$("#sub").click(function(){
 
+				var user_name = $("#name").val();
 				var user_email = $("#email").val();
+				var user_pass = $("#pass").val();
 
 
 
-				$.get("test.php",{email:user_email},function(data){
+				$.post("test.php",{name:user_name,email:user_email,pass:user_pass},function(data){
 				$("#result").html(data);	
 				});
 			});

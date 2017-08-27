@@ -9,7 +9,6 @@ if (!$con)
 {
 	die("connection failed:" . mysqli_connect_error());
 }
-
 $sel ="select * from users where email ='$email'";
 $run = mysqli_query($con,$sel);
 

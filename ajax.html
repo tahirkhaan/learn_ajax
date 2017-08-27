@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Learn Ajax</title>
-	<script src="jquery.js"></script>
-
-	<style>
-		#box{
+    <head>
+        <title>
+            Learn Ajax
+        </title>
+        <script src="jquery.js">
+        </script>
+        <style>
+            #box{
 			width: 600px;
 			background: gray;
 			color: white;
@@ -13,10 +15,10 @@
 			text-align: center;
 
 		}
-	</style>
-	<!--Add jquery -->
-	<script>
-		$(document).ready(function(){
+        </style>
+        <!--Add jquery -->
+        <script>
+            $(document).ready(function(){
 			
 			$("#sub").click(function(){
 
@@ -29,24 +31,29 @@
 				});
 			});
 		});
-	</script>
-</head>
-<body>
-
-<div id="box">
-<h2>New Users Registration Here</h2>
-<input type="text" name="name" id="name" placeholder="Enter Your name">	<br>
-<input type="text" name="email" id="email" placeholder="Enter Your email">	<br>
-<input type="password" name="pass" id="pass" placeholder="Enter Your password">	<br>
-<input type="submit" name="sub" id="sub" value="submit">
-
-<div id="result">
-	
-</div>
-</div>
-
-
-
-
-</body>
+        </script>
+    </head>
+    <body>
+        <div id="box">
+            <h2>
+                New Users Registration Here
+            </h2>
+            <input id="name" name="name" placeholder="Enter Your name" type="text">
+                <br>
+                    <input id="email" name="email" placeholder="Enter Your email" type="text">
+                        <br>
+                            <input id="pass" name="pass" placeholder="Enter Your password" type="password">
+                                <br>
+                                    <input id="sub" name="sub" type="submit" value="submit">
+                                        <div id="result">
+                                        </div>
+                                    </input>
+                                </br>
+                            </input>
+                        </br>
+                    </input>
+                </br>
+            </input>
+        </div>
+    </body>
 </html>
